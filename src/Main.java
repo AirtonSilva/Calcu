@@ -3,8 +3,9 @@ import java.util.Scanner;
 import java.lang.Math.*;
 import java.awt.*;
 import java.awt.event.*;
-
 import javax.swing.*;
+
+/*Depois de fazer algumas modificações, copiar o arquivo do trunk e colar o arquivo no branch*/
 
 public class Main {
 
