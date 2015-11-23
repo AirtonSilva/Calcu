@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.lang.Math.*;
-
 public class Calc {
 
 	public static void main(String[] args){
@@ -13,14 +12,14 @@ public class Calc {
 		System.out.println("Calculadora comum\n\nInforme um valor: ");
 		a = key.nextFloat();
 		
-		System.out.println("Escolha a operaÁ„o (+,-,*,/): ");
+		System.out.println("Escolha a opera√ß√£o (+,-,*,/): ");
 		op = key.next();
 		
 		System.out.println("Informe um valor: ");
 		b = key.nextFloat();
 		
 		switch (op){
-		
+	
 			case "+": System.out.println(a+b);
 					break;
 		
@@ -33,7 +32,7 @@ public class Calc {
 			case "/": System.out.println(a/b);
 					break;
 					
-			default: System.out.println("Inv·lido! Favor inserir operador e dados corretamente!");
+			default: System.out.println("Inv√°lido! Favor inserir operador e dados corretamente!");
 		
 		}
 
