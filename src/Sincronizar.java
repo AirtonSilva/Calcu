@@ -21,8 +21,6 @@ public class Sincronizar  implements Runnable{
 	public synchronized int calculo(){
 		
 		Calculadora c = new Calculadora();
-		
-		System.out.println("Informe o valor, o sinal de operação e o outro valor abaixo:");
 		return c.calcular(a, sinal, b);
 		
 	}
