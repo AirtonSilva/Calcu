@@ -1,2 +1,2 @@
-# Calcu
-Versão última
+# Calculadora 
+Vers�o Sincronizada
