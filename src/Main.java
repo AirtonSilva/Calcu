@@ -19,7 +19,7 @@ public class Main {
 		System.out.println("Calculadora comum\n\nInforme um valor: ");
 		a = key.nextFloat();
 		
-		System.out.println("Escolha a operaÁ„o (+,-,*,/): ");
+		System.out.println("Escolha a opera√ß√£o (+,-,*,/): ");
 		op = key.next();
 		
 		System.out.println("Informe um valor: ");
@@ -51,7 +51,7 @@ public class Main {
 			System.out.println("Arquivo salvo com sucesso!");
 		}catch (Exception e){
 			e.printStackTrace();
-			System.out.println("Arquivo n„o foi salvo!");
+			System.out.println("Arquivo n√£o foi salvo!");
 		}
 	}
 }//class
