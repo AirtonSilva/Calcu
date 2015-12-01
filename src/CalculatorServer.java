@@ -1,12 +1,12 @@
 import java.rmi.Naming; 
 
-public class CalculadoraServidor {
+public class CalculatorServer {
 	
-	public CalculadoraServidor() {
+	public CalculatorServer() {
 	   
 	   try { 
     	
-    	Airton_Calculator calc = new CalculadoraImpl(); 
+    	Airton_Calculator calc = new CalculatorImpl(); 
         Naming.rebind("rmi://jaca.ime.usp.br:1099/ CalculatorService", calc);
 
 	   }
@@ -21,7 +21,7 @@ public class CalculadoraServidor {
 
    public static void main(String args[]) {
 	   
-	   new CalculadoraServidor();
+	   new CalculatorServer();
 
    }
 

@@ -1,6 +1,6 @@
-public class CalculadoraImpl extends java.rmi.server.UnicastRemoteObject implements Airton_Calculator {
+public class CalculatorImpl extends java.rmi.server.UnicastRemoteObject implements Airton_Calculator {
 
-	public CalculadoraImpl() throws java.rmi.RemoteException {
+	public CalculatorImpl() throws java.rmi.RemoteException {
 		
 		super();	
 	} 
