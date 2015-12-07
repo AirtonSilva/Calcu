@@ -1,29 +1,22 @@
-public class CalculatorImpl extends java.rmi.server.UnicastRemoteObject implements Airton_Calculator {
-
+public class CalculatorImpl extends java.rmi.server.UnicastRemoteObject
+		implements Airton_Calculator {
 	public CalculatorImpl() throws java.rmi.RemoteException {
-		
-		super();	
-	} 
-
-	public long soma(long a, long b) throws java.rmi.RemoteException { 
-	
-		return (a+b); 
-	}
-	
-	public long subtrai(long a, long b)	throws java.rmi.RemoteException {
-		
-		return (a-b); 
-	}
-	
-	public long multiplica(long a, long b) 	throws java.rmi.RemoteException {
-
-		return (a*b); 
+		super();
 	}
 
-	public long divide(long a, long b) throws java.rmi.RemoteException { 
-
-		return (a/b);
-	
+	public long add(long a, long b) throws java.rmi.RemoteException {
+		return a + b;
 	}
 
+	public long sub(long a, long b) throws java.rmi.RemoteException {
+		return a - b;
+	}
+
+	public long mul(long a, long b) throws java.rmi.RemoteException {
+		return a * b;
+	}
+
+	public long div(long a, long b) throws java.rmi.RemoteException {
+		return a / b;
+	}
 }

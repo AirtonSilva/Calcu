@@ -1,28 +1,16 @@
-import java.rmi.Naming; 
+import java.rmi.Naming;
 
 public class CalculatorServer {
-	
 	public CalculatorServer() {
-	   
-	   try { 
-    	
-    	Airton_Calculator calc = new CalculatorImpl(); 
-        Naming.rebind("rmi://jaca.ime.usp.br:1099/ CalculatorService", calc);
+		try {
+			Airton_Calculator c = new CalculatorImpl();
+			Naming.rebind("Airton_Calculator", c);
+		} catch (Exception e) {
+			System.out.println("Trouble: " + e);
+		}
+	}
 
-	   }
-	   
-	   catch (Exception e) {
-    	
-		   System.out.println("O erro foi: "+ e);
-	   
-	   }
-
-   } 
-
-   public static void main(String args[]) {
-	   
-	   new CalculatorServer();
-
-   }
-
- }
+	public static void main(String args[]) {
+		new CalculatorServer();
+	}
+}
